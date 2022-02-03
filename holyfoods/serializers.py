@@ -4,7 +4,7 @@ from .models import Shop, Donut
 
 class ShopSerializer(serializers.HyperlinkedModelSerializer):
     donuts = serializers.HyperlinkedRelatedField(
-        view_name='dunut_detail',
+        view_name='donut_detail',
         many=True,
         read_only=True
     )
